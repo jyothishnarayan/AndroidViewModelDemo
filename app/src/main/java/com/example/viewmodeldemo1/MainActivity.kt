@@ -20,14 +20,9 @@ class MainActivity : AppCompatActivity() {
             binding.countText.text = it.toString()
         })
         //binding.countText.text = viewModel.getCurrentCount().toString()
-        binding.apply {
-            button.setOnClickListener {
-                countText.text = viewModel.getUpdatedCount().toString()
-            }
-        }
-       /* binding.button.setOnClickListener {
+        binding.button.setOnClickListener {
 
             binding.countText.text = viewModel.getUpdatedCount().toString()
-        }*/
+        }
     }
 }
